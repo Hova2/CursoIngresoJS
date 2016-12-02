@@ -1,5 +1,16 @@
-function CalcularBase ()
+function mostrarDiaSemana ()
 {
-	var nBase = parseInt(document.getElementById('Base').value);
-	alert("El perimetro del cuadrado es: " + (4*nBase));
+	var dia = document.getElementById('Dia').value;
+	
+	switch(dia){
+		case "Sabado":
+			alert("Hoy se sale fuerte!!!");
+		break;
+		case "Domingo":
+			alert("Destroy!!!");
+		break;
+		default:
+			alert("Sos pobre, labura!!!!");
+		break;
+	}
 }
